@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MRIDHULA M | Aspiring AI & Data Science Professional</title>
+  <meta name="description" content="Portfolio of Mridhula M - Computer Science student specializing in AI & Data Science at Rathinam Global University. Skilled in Python, SQL, C, and Machine Learning.">
+  <meta name="keywords" content="Mridhula M, AI, Data Science, Portfolio, Python, Machine Learning, Rathinam Global University, Computer Science">
+  <meta name="author" content="Mridhula M">
+  <meta name="theme-color" content="#070b14">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="MRIDHULA M | Aspiring AI & Data Science Professional">
+  <meta property="og:description" content="Computer Science student passionate about AI, Data Science, Machine Learning, and Python programming.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon SVG with MM Initials -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230b1120'/><circle cx='50' cy='50' r='42' fill='none' stroke='%2338bdf8' stroke-width='3' stroke-dasharray='4 2'/><text x='50' y='60' font-family='sans-serif' font-weight='800' font-size='38' text-anchor='middle' fill='%23a855f7'>MM</text></svg>">
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Interactive Cursor Glow Spotlight -->
+  <div class="cursor-spotlight" id="cursor-spotlight" aria-hidden="true"></div>
+
+  <!-- Ambient Particle Canvas -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- Glowing Gradient Orbs in Background -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="main-nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Mridhula M Home">
+        <span class="brand-avatar">MM</span>
+        <div class="brand-text">
+          <span class="brand-name">MRIDHULA M</span>
+          <span class="brand-tag">AI & Data Science</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA & Mobile Hamburger -->
+      <div class="nav-actions">
+        <button id="nav-resume-btn" class="btn btn-outline-sm open-resume-modal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="status-pill reveal-fade">
+            <span class="pulse-dot"></span>
+            <span>Available for Internships & Early Tech Roles</span>
+          </div>
+
+          <h1 class="hero-title reveal-fade">
+            <span class="greeting">Hello, I am</span>
+            <span class="gradient-text hero-name animated-gradient-text">MRIDHULA M</span>
+          </h1>
+
+          <p class="hero-subtitle reveal-fade">
+            <span class="sparkle-icon">✦</span>
+            <span id="typewriter-text" class="typewriter-text" data-phrases='["Aspiring AI & Data Science Professional", "Python & Machine Learning Enthusiast", "Data Analytics & SQL Explorer", "Passionate Problem Solver & Scholar"]'>Aspiring AI &amp; Data Science Professional</span><span class="typewriter-cursor" aria-hidden="true">|</span>
+          </p>
+
+          <p class="hero-description reveal-fade">
+            I am a Computer Science student specializing in Artificial Intelligence and Data Science, passionate about Python programming, data analysis, and machine learning. I am eager to learn new technologies, solve problems, and build practical solutions.
+          </p>
+
+          <!-- Key Metrics Pills -->
+          <div class="hero-pills reveal-fade">
+            <div class="hero-pill">
+              <span class="pill-accent">CGPA</span>
+              <strong class="pill-val">8.6</strong>
+              <span class="pill-sub">Rathinam Univ</span>
+            </div>
+            <div class="hero-pill">
+              <span class="pill-accent">Honor</span>
+              <strong class="pill-val">Silver + Elite</strong>
+              <span class="pill-sub">NPTEL</span>
+            </div>
+            <div class="hero-pill">
+              <span class="pill-accent">Domain</span>
+              <strong class="pill-val">AI &amp; DS</strong>
+              <span class="pill-sub">Computer Science</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group reveal-fade">
+            <button class="btn btn-primary open-resume-modal" id="hero-resume-btn">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>View My Resume</span>
+            </button>
+
+            <a href="#skills" class="btn btn-secondary" id="hero-skills-btn">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>Explore My Skills</span>
+            </a>
+
+            <a href="#contact" class="btn btn-ghost" id="hero-contact-btn">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Column (Initials Based Avatar) -->
+        <div class="hero-avatar-wrapper reveal-scale">
+          <div class="avatar-stage">
+            
+            <!-- Animated Cyber Orbit Rings -->
+            <div class="orbital-ring ring-outer"></div>
+            <div class="orbital-ring ring-middle"></div>
+            <div class="orbital-ring ring-inner"></div>
+
+            <!-- Central Glassmorphic Avatar -->
+            <div class="avatar-core" id="initials-avatar">
+              <div class="avatar-glow"></div>
+              <div class="avatar-badge-text">
+                <span class="avatar-initials">MM</span>
+                <span class="avatar-label">AI &amp; DATA SCIENCE</span>
+              </div>
+            </div>
+
+            <!-- Floating Micro Cards -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon icon-code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="badge-text">
+                <span class="badge-title">Python &amp; SQL</span>
+                <span class="badge-sub">Data Core</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon icon-trophy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <div class="badge-text">
+                <span class="badge-title">NPTEL Elite</span>
+                <span class="badge-sub">Silver Medalist</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <div class="badge-icon icon-cgpa">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <div class="badge-text">
+                <span class="badge-title">8.6 CGPA</span>
+                <span class="badge-sub">High Distinction</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <span class="mouse">
+          <span class="wheel"></span>
+        </span>
+        <span class="scroll-arrow">↓</span>
+      </a>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Profile Overview</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Dedicated to mastering data algorithms, analytical problem solving, and intelligent software engineering.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Bio Narrative Card -->
+          <div class="about-narrative-card glass-card reveal-left">
+            <div class="card-glow-edge"></div>
+            <div class="narrative-badge">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <span>Career Objective &amp; Vision</span>
+            </div>
+
+            <h3 class="narrative-heading">
+              Computer Science student specializing in <span class="text-cyan">Artificial Intelligence</span> &amp; <span class="text-purple">Data Science</span>
+            </h3>
+
+            <p class="narrative-p">
+              I am pursuing my <strong>Bachelor of Science in Computer Science (AI &amp; DS)</strong> at <strong>Rathinam Global Deemed to be University, Coimbatore</strong> with an academic performance of <strong>8.6 CGPA</strong>. 
+            </p>
+
+            <p class="narrative-p">
+              My objective is to obtain an opportunity where I can learn new skills, sharpen my technical knowledge, and gain valuable practical experience while actively contributing to organizational growth. I am driven to work in a dynamic, forward-thinking environment to build a successful career in Computer Science and intelligent data technologies.
+            </p>
+
+            <p class="narrative-p">
+              Whether analyzing datasets, building structured algorithms in Python and C, or designing relational schemas in SQL, I prioritize analytical clarity, clean code, and continuous learning.
+            </p>
+
+            <!-- Language Fluency Pill Bar -->
+            <div class="languages-block">
+              <span class="lang-heading">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                Languages Known:
+              </span>
+              <div class="lang-tags">
+                <span class="lang-tag">English</span>
+                <span class="lang-tag">Tamil</span>
+                <span class="lang-tag">Hindi</span>
+                <span class="lang-tag">Malayalam</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Cards / Quick Stats Grid -->
+          <div class="about-highlights-grid reveal-right">
+            
+            <div class="stat-card glass-card">
+              <div class="stat-icon-wrapper icon-bg-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <div class="stat-content">
+                <span class="stat-label">Specialization</span>
+                <h4 class="stat-title">AI &amp; Data Science</h4>
+                <p class="stat-desc">Core focus on Machine Learning, Data Analytics &amp; Algorithms</p>
+              </div>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon-wrapper icon-bg-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <div class="stat-content">
+                <span class="stat-label">Academic Distinction</span>
+                <h4 class="stat-title">8.6 CGPA Score</h4>
+                <p class="stat-desc">Consistently strong foundation across core CS subjects</p>
+              </div>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon-wrapper icon-bg-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="stat-content">
+                <span class="stat-label">Core Foundation</span>
+                <h4 class="stat-title">Python &amp; Problem Solving</h4>
+                <p class="stat-desc">Hands-on practice with structured programming and logic</p>
+              </div>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon-wrapper icon-bg-emerald">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div class="stat-content">
+                <span class="stat-label">Collaboration</span>
+                <h4 class="stat-title">Team Mindset</h4>
+                <p class="stat-desc">Active communicator with multi-language fluency</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">Formal foundation in Computer Science, Artificial Intelligence, and Modern Computing.</p>
+        </div>
+
+        <div class="education-showcase">
+          <div class="education-card glass-card reveal-scale">
+            
+            <div class="edu-header">
+              
+              <div class="edu-brand-badge">
+                <div class="edu-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                </div>
+                <div>
+                  <span class="edu-level-tag">Undergraduate Program</span>
+                  <h3 class="edu-degree">Bachelor of Science in Computer Science (AI &amp; DS)</h3>
+                  <div class="edu-institution">
+                    <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span>Rathinam Global Deemed to be University, Coimbatore</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Animated CGPA Counter Badge -->
+              <div class="cgpa-badge-container">
+                <div class="cgpa-glow-ring"></div>
+                <div class="cgpa-counter-box">
+                  <span class="cgpa-label">CURRENT CGPA</span>
+                  <div class="cgpa-number-wrapper">
+                    <span class="cgpa-number" id="cgpa-counter" data-target="8.6">0.0</span>
+                    <span class="cgpa-max">/ 10</span>
+                  </div>
+                  <span class="cgpa-status">First Class with Distinction</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="edu-divider"></div>
+
+            <div class="edu-details-grid">
+              
+              <div class="edu-detail-col">
+                <h4 class="edu-subhead">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  Key Coursework &amp; Focus Areas
+                </h4>
+                <ul class="edu-course-list">
+                  <li>Artificial Intelligence &amp; Expert Systems</li>
+                  <li>Data Science &amp; Statistical Modeling</li>
+                  <li>Data Structures and Algorithms in C</li>
+                  <li>Database Management Systems (SQL)</li>
+                  <li>Python for Scientific Computing</li>
+                  <li>Machine Learning Fundamentals</li>
+                </ul>
+              </div>
+
+              <div class="edu-detail-col">
+                <h4 class="edu-subhead">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                  Academic Highlights
+                </h4>
+                <p class="edu-highlight-text">
+                  Demonstrated sustained academic consistency with an <strong>8.6 cumulative grade point average</strong>. Active participant in technical workshops, certification tracks, and competitive certifications including NPTEL examinations.
+                </p>
+                <div class="edu-badge-strip">
+                  <span class="badge-mini"><span class="dot-cyan"></span> Coimbatore, Tamil Nadu</span>
+                  <span class="badge-mini"><span class="dot-purple"></span> AI &amp; DS Dept</span>
+                  <span class="badge-mini"><span class="dot-green"></span> Active Scholar</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Technical &amp; Soft <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">Carefully honed capabilities derived from academic curriculum, certifications, and hands-on practice.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card glass-card reveal-fade" style="--card-accent: #3b82f6;">
+            <div class="card-glow-edge"></div>
+            <div class="category-header">
+              <div class="category-icon-box bg-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Programming Languages</h3>
+                <p class="category-subtitle">Foundational and analytical coding</p>
+              </div>
+            </div>
+
+            <div class="skill-tags-wrapper">
+              
+              <div class="skill-tag">
+                <div class="tag-icon-circle py-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.9 2c-3.7 0-3.5 1.6-3.5 1.6l.04 1.7h3.6v.5H4.8S2 5.5 2 9.2c0 3.8 2.5 3.6 2.5 3.6h1.5v-2.1s-.1-2.5 2.5-2.5h4.2s2.4-.1 2.4-2.4c0-2.4-3.2-3.8-3.2-3.8zm-1.8 1.1a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6zm2 18.9c3.7 0 3.5-1.6 3.5-1.6l-.04-1.7h-3.6v-.5h7.2s2.8.3 2.8-3.4c0-3.8-2.5-3.6-2.5-3.6h-1.5v2.1s.1 2.5-2.5 2.5h-4.2s-2.4.1-2.4 2.4c0 2.4 3.2 3.8 3.2 3.8zm1.8-1.1a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6z"/></svg>
+                </div>
+                <div class="tag-info">
+                  <span class="tag-name">Python</span>
+                  <span class="tag-meta">Data, Logic, Scripting</span>
+                </div>
+              </div>
+
+              <div class="skill-tag">
+                <div class="tag-icon-circle sql-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                </div>
+                <div class="tag-info">
+                  <span class="tag-name">SQL</span>
+                  <span class="tag-meta">Queries &amp; Relational DB</span>
+                </div>
+              </div>
+
+              <div class="skill-tag">
+                <div class="tag-icon-circle c-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M15 9.354a4 4 0 1 0 0 5.292"></path></svg>
+                </div>
+                <div class="tag-info">
+                  <span class="tag-name">C Language</span>
+                  <span class="tag-meta">Data Structures &amp; Memory</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Technical Skills -->
+          <div class="skill-category-card glass-card reveal-fade" style="--card-accent: #8b5cf6;">
+            <div class="card-glow-edge"></div>
+            <div class="category-header">
+              <div class="category-icon-box bg-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Technical Skills</h3>
+                <p class="category-subtitle">Applied intelligent tools &amp; analysis</p>
+              </div>
+            </div>
+
+            <div class="skill-tags-wrapper">
+              
+              <div class="skill-tag">
+                <div class="tag-icon-circle ml-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                </div>
+                <div class="tag-info">
+                  <span class="tag-name">Machine Learning</span>
+                  <span class="tag-meta">Algorithms &amp; Predictive Models</span>
+                </div>
+              </div>
+
+              <div class="skill-tag">
+                <div class="tag-icon-circle excel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                </div>
+                <div class="tag-info">
+                  <span class="tag-name">Microsoft Excel</span>
+                  <span class="tag-meta">Data Processing &amp; Spreadsheets</span>
+                </div>
+              </div>
+
+              <div class="skill-tag">
+                <div class="tag-icon-circle analytics-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </div>
+                <div class="tag-info">
+                  <span class="tag-name">Data Analysis</span>
+                  <span class="tag-meta">Exploration &amp; Insights</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 3: Soft Skills -->
+          <div class="skill-category-card glass-card reveal-fade" style="--card-accent: #06b6d4;">
+            <div class="card-glow-edge"></div>
+            <div class="category-header">
+              <div class="category-icon-box bg-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Professional &amp; Soft Skills</h3>
+                <p class="category-subtitle">Interpersonal &amp; workplace strengths</p>
+              </div>
+            </div>
+
+            <div class="skill-tags-wrapper">
+              
+              <div class="skill-tag">
+                <div class="tag-icon-circle ps-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                </div>
+                <div class="tag-info">
+                  <span class="tag-name">Problem-Solving</span>
+                  <span class="tag-meta">Analytical Thinking</span>
+                </div>
+              </div>
+
+              <div class="skill-tag">
+                <div class="tag-icon-circle team-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
+                </div>
+                <div class="tag-info">
+                  <span class="tag-name">Team Collaboration</span>
+                  <span class="tag-meta">Synergy &amp; Adaptability</span>
+                </div>
+              </div>
+
+              <div class="skill-tag">
+                <div class="tag-icon-circle comm-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <div class="tag-info">
+                  <span class="tag-name">Communication</span>
+                  <span class="tag-meta">Clear &amp; Professional</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skills-disclaimer">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>Honest competency representation: Skills are categorized directly from resume coursework without subjective percentage claims.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. ACHIEVEMENTS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Key Milestones</span>
+          <h2 class="section-title">Honors &amp; <span class="gradient-text">Achievements</span></h2>
+          <p class="section-subtitle">National level certification excellence and competitive academic recognitions.</p>
+        </div>
+
+        <div class="achievement-showcase reveal-scale">
+          
+          <!-- Premium Silver-Themed Achievement Card -->
+          <div class="silver-achievement-card">
+            
+            <!-- Metallic Shimmer Effect -->
+            <div class="silver-shimmer" aria-hidden="true"></div>
+
+            <div class="achievement-content-flex">
+              
+              <!-- Medal Column -->
+              <div class="medal-visual">
+                <div class="silver-badge-halo"></div>
+                <div class="silver-medal-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="8" r="6"></circle>
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                  </svg>
+                  <span class="silver-label">SILVER</span>
+                </div>
+                <span class="elite-pill">ELITE + SILVER</span>
+              </div>
+
+              <!-- Info Column -->
+              <div class="achievement-text">
+                <div class="achievement-badge-meta">
+                  <span class="cert-authority">NPTEL Certification Examination</span>
+                  <span class="status-verified">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="icon-xs"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    Verified National Benchmark
+                  </span>
+                </div>
+
+                <h3 class="achievement-title">NPTEL Elite + Silver Achievement</h3>
+                
+                <p class="achievement-desc">
+                  Earned the prestigious <strong>Elite + Silver Badge</strong> in the NPTEL Certification Exam, reflecting dedication to high academic standards, conceptual mastery, and disciplined exam performance across competitive national evaluations.
+                </p>
+
+                <div class="achievement-highlights">
+                  <div class="highlight-chip">
+                    <span class="chip-star">★</span>
+                    <span>National Level Recognition</span>
+                  </div>
+                  <div class="highlight-chip">
+                    <span class="chip-star">★</span>
+                    <span>Rigorous Proctored Assessment</span>
+                  </div>
+                  <div class="highlight-chip">
+                    <span class="chip-star">★</span>
+                    <span>Top Tier Performance Band</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. CERTIFICATIONS SECTION -->
+    <section class="section certs-section" id="certifications">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Professional <span class="gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">Verified educational credentials completed in data science, programming, and innovation.</p>
+        </div>
+
+        <div class="certs-grid">
+          
+          <!-- Cert 1: Understanding Incubation and Entrepreneurship -->
+          <div class="cert-card glass-card reveal-fade">
+            <div class="cert-icon-wrapper nptel-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-issuer">NPTEL</span>
+              <span class="cert-tag-pill">Incubation</span>
+            </div>
+            <h3 class="cert-title">Understanding Incubation and Entrepreneurship</h3>
+            <p class="cert-desc">Exploration of startup ecosystems, business incubation pipelines, innovation methodology, and tech entrepreneurship.</p>
+            <div class="cert-footer">
+              <span class="cert-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Course Complete
+              </span>
+            </div>
+          </div>
+
+          <!-- Cert 2: Python for Data Science -->
+          <div class="cert-card glass-card reveal-fade">
+            <div class="cert-icon-wrapper coursera-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-issuer">Coursera</span>
+              <span class="cert-tag-pill">Data Science</span>
+            </div>
+            <h3 class="cert-title">Python for Data Science</h3>
+            <p class="cert-desc">Core Python programming tailored for data workflows, analytical computing, arrays, and exploratory data manipulation.</p>
+            <div class="cert-footer">
+              <span class="cert-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Course Complete
+              </span>
+            </div>
+          </div>
+
+          <!-- Cert 3: Data Structure in C -->
+          <div class="cert-card glass-card reveal-fade">
+            <div class="cert-icon-wrapper c-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-issuer">Technical Certification</span>
+              <span class="cert-tag-pill">Algorithms</span>
+            </div>
+            <h3 class="cert-title">Data Structure in C</h3>
+            <p class="cert-desc">Foundational principles of memory allocation, linked lists, stacks, queues, trees, searching, and sorting algorithms in C.</p>
+            <div class="cert-footer">
+              <span class="cert-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Course Complete
+              </span>
+            </div>
+          </div>
+
+          <!-- Cert 4: Data Analysis with Python -->
+          <div class="cert-card glass-card reveal-fade">
+            <div class="cert-icon-wrapper py-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-issuer">Technical Certification</span>
+              <span class="cert-tag-pill">Analytics</span>
+            </div>
+            <h3 class="cert-title">Data Analysis with Python</h3>
+            <p class="cert-desc">Hands-on experience processing tabular data, cleaning datasets, statistical summary computations, and trend analysis.</p>
+            <div class="cert-footer">
+              <span class="cert-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Course Complete
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. PROJECTS SECTION (HONEST EMPTY STATE & MODULAR TEMPLATE) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Practical implementations currently undergoing development and testing.</p>
+        </div>
+
+        <!-- Honest Empty State Card -->
+        <div class="empty-state-card glass-card reveal-scale">
+          <div class="empty-state-badge">
+            <span class="pulse-dot"></span>
+            <span>Active Development Phase</span>
+          </div>
+
+          <div class="empty-icon-halo">
+            <div class="empty-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+                <path d="M7 8l3 3-3 3"></path>
+                <line x1="12" y1="14" x2="16" y2="14"></line>
+              </svg>
+            </div>
+          </div>
+
+          <h3 class="empty-title">Projects Coming Soon</h3>
+          
+          <p class="empty-message">
+            I am actively working on building practical <strong>Artificial Intelligence</strong> and <strong>Data Science</strong> projects. These upcoming projects focus on machine learning algorithms, statistical data analysis, and predictive models using Python and SQL.
+          </p>
+
+          <p class="empty-submessage">
+            Real projects, including live demos, interactive data visualizations, detailed architecture documentation, and GitHub repositories will be showcased here as they are deployed.
+          </p>
+
+          <div class="project-roadmap-tags">
+            <span class="roadmap-tag"><span class="tag-bullet"></span> Machine Learning Pipeline</span>
+            <span class="roadmap-tag"><span class="tag-bullet"></span> Exploratory Data Analysis</span>
+            <span class="roadmap-tag"><span class="tag-bullet"></span> SQL Database Architecture</span>
+            <span class="roadmap-tag"><span class="tag-bullet"></span> Python Predictive Modeling</span>
+          </div>
+        </div>
+
+        <!-- Reusable Project Card Preview Template (Ready for future additions) -->
+        <div class="project-templates-grid reveal-fade">
+          <div class="project-card-placeholder glass-card">
+            <div class="placeholder-top">
+              <span class="status-chip in-progress">In Development</span>
+              <span class="placeholder-id">PROJECT #01</span>
+            </div>
+            <div class="placeholder-body">
+              <h4 class="placeholder-title">AI &amp; Machine Learning Project</h4>
+              <p class="placeholder-desc">Practical modeling, data preprocessing pipelines, and performance evaluation metrics using Python and scientific computing libraries.</p>
+              <div class="placeholder-tags">
+                <span class="tag-mini">Python</span>
+                <span class="tag-mini">Machine Learning</span>
+                <span class="tag-mini">Pandas</span>
+              </div>
+            </div>
+            <div class="placeholder-footer">
+              <span class="slot-ready-notice">
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Template Slot Ready for GitHub &amp; Demo Links
+              </span>
+            </div>
+          </div>
+
+          <div class="project-card-placeholder glass-card">
+            <div class="placeholder-top">
+              <span class="status-chip planned">Upcoming</span>
+              <span class="placeholder-id">PROJECT #02</span>
+            </div>
+            <div class="placeholder-body">
+              <h4 class="placeholder-title">Data Analytics &amp; SQL Exploration</h4>
+              <p class="placeholder-desc">Relational query analysis, dataset transformation, insight aggregation, and executive spreadsheet visualization.</p>
+              <div class="placeholder-tags">
+                <span class="tag-mini">SQL</span>
+                <span class="tag-mini">Excel</span>
+                <span class="tag-mini">Data Analysis</span>
+              </div>
+            </div>
+            <div class="placeholder-footer">
+              <span class="slot-ready-notice">
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Template Slot Ready for GitHub &amp; Demo Links
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-subtitle">Interested in internships, project collaborations, or discussing AI and Data Science? Reach out anytime.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Card -->
+          <div class="contact-info-card glass-card reveal-left">
+            <div class="card-glow-edge"></div>
+            
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-desc">
+              Feel free to contact me directly via email, phone, or LinkedIn. I am always open to learning opportunities and discussing new technology.
+            </p>
+
+            <div class="contact-items-list">
+              
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-icon-box bg-purple">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Email Address</span>
+                  <a href="mailto:mmridhula148@gmail.com" class="contact-link" id="email-link">mmridhula148@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="mmridhula148@gmail.com" aria-label="Copy email address" title="Copy Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-item">
+                <div class="contact-icon-box bg-blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+918056152069" class="contact-link">+91 8056152069</a>
+                </div>
+                <button class="copy-btn" data-copy="+918056152069" aria-label="Copy phone number" title="Copy Phone">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-item">
+                <div class="contact-icon-box bg-cyan">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/m-mridhula-5809a5377" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    linkedin.com/in/m-mridhula-5809a5377
+                  </a>
+                </div>
+                <a href="https://www.linkedin.com/in/m-mridhula-5809a5377" target="_blank" rel="noopener noreferrer" class="external-icon-btn" aria-label="Open LinkedIn" title="Open LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="contact-icon-box bg-emerald">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-static">Coimbatore, Tamil Nadu, India</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Resume Download Quick Tile -->
+            <div class="contact-resume-cta">
+              <div class="resume-cta-content">
+                <span class="resume-cta-title">Looking for official credentials?</span>
+                <span class="resume-cta-sub">View or download the full resume PDF directly</span>
+              </div>
+              <button class="btn btn-outline-sm open-resume-modal">
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>View Resume</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-card glass-card reveal-right">
+            <div class="card-glow-edge"></div>
+
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-subtitle">Fill in your information below and launch a formatted email directly.</p>
+
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-name">Your Name</label>
+                  <input type="text" id="sender-name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="sender-email">Your Email</label>
+                  <input type="email" id="sender-email" name="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-subject">Subject</label>
+                <input type="text" id="sender-subject" name="subject" placeholder="Internship Opportunity / Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message">Message</label>
+                <textarea id="sender-message" name="message" rows="5" placeholder="Hi Mridhula, I reviewed your profile and would love to connect..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="send-msg-btn">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send Message</span>
+              </button>
+            </form>
+
+            <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="footer-avatar">MM</span>
+        <div class="footer-text">
+          <span class="footer-name">MRIDHULA M</span>
+          <span class="footer-tagline">Aspiring AI &amp; Data Science Professional</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> MRIDHULA M. Crafted with precision &amp; modern web standards.</p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <span>Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME MODAL VIEWER -->
+  <div class="modal-backdrop" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-dialog">
+      
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          <div>
+            <h3 class="modal-title" id="modal-title">MRIDHULA M — Resume</h3>
+            <span class="modal-sub">Official Academic &amp; Technical Credentials</span>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <a href="MRIDHULA M resume.pdf" download="MRIDHULA_M_Resume.pdf" class="btn btn-primary-sm" id="modal-download-btn">
+            <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download PDF</span>
+          </a>
+          <button class="modal-close-btn" id="close-modal-btn" aria-label="Close resume preview">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <iframe src="MRIDHULA M resume.pdf#toolbar=1&navpanes=0" id="resume-iframe" title="Mridhula M Resume Preview" loading="lazy"></iframe>
+        <div class="modal-fallback">
+          <p>If the preview does not display in your browser:</p>
+          <a href="MRIDHULA M resume.pdf" target="_blank" class="btn btn-secondary">Open PDF in New Tab</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toast-notify" role="alert" aria-live="assertive"></div>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
